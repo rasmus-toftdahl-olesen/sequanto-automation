@@ -1,4 +1,7 @@
 # sequanto-automation
+
+[![Linux Build Status](https://github.com/rasmus-toftdahl-olesen/sequanto-automation/workflows/Linux/badge.svg)](https://github.com/rasmus-toftdahl-olesen/sequanto-automation/actions?query=workflow%3ALinux)
+
 A C/C++ library for automating applications through a TCP or serial port. This makes it very easy to automate applications for test or for other purposes.
 
 Your functions and variables are exposed as a tree view with a minimum of coding and allows you to have a consistent way of providing automation for everything from embedded (e.g. Arduino) projects to large enterprise applications.
