@@ -16,4 +16,4 @@ jobs:
     - name: cmake
       run: cmake .
     - name: compile
-      run: devenv libSequantoAutomation.sln /build Debug
+      run: msbuild libSequantoAutomation.sln # /build Debug
