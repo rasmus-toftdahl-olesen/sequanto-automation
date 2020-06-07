@@ -17,6 +17,8 @@ jobs:
     - name: dog version
       run: ~/bin/dog --version
     - uses: actions/checkout@v2
+    - name: find
+      run: pwd; find
     - name: cmake
       run: ~/bin/dog cmake .
     - name: make
