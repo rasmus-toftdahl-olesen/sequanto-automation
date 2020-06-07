@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Put dog in PATH
-      run: mkdir ~/bin; wget -O ~/bin/dog https://raw.githubusercontent.com/rasmus-toftdahl-olesen/dog/master/dog.py; chmod +x ~/bin/dog; export PATH=$PATH:~/bin; dog --version
+      run: mkdir ~/bin; wget -O ~/bin/dog https://raw.githubusercontent.com/rasmus-toftdahl-olesen/dog/master/dog.py; chmod +x ~/bin/dog; ~/bin/dog --version
     - uses: actions/checkout@v2
     - name: cmake
       run: ~/bin/dog cmake .
