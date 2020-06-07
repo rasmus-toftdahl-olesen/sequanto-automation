@@ -2,6 +2,7 @@
 
 [![Linux Build Status](https://github.com/rasmus-toftdahl-olesen/sequanto-automation/workflows/Linux/badge.svg)](https://github.com/rasmus-toftdahl-olesen/sequanto-automation/actions?query=workflow%3ALinux)
 [![Windows Build Status](https://github.com/rasmus-toftdahl-olesen/sequanto-automation/workflows/Windows/badge.svg)](https://github.com/rasmus-toftdahl-olesen/sequanto-automation/actions?query=workflow%3AWindows)
+[![dog Build Status](https://github.com/rasmus-toftdahl-olesen/sequanto-automation/workflows/dog/badge.svg)](https://github.com/rasmus-toftdahl-olesen/sequanto-automation/actions?query=workflow%3Adog)
 
 A C/C++ library for automating applications through a TCP or serial port. This makes it very easy to automate applications for test or for other purposes.
 
