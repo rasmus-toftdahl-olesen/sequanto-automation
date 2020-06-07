@@ -1,0 +1,25 @@
+name: dog
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Put dog in PATH
+      run: mkdir ~/bin; wget -O ~/bin/dog https://raw.githubusercontent.com/rasmus-toftdahl-olesen/dog/master/dog.py; export PATH=$PATH:~/bin
+    - name: Resulting PATH
+      run: echo $PATH
+    - name: dog version
+      run: dog --version
+    - uses: actions/checkout@v2
+    - name: cmake
+      run: dog cmake .
+    - name: make
+      run: dog make
