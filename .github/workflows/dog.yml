@@ -13,13 +13,9 @@ jobs:
 
     steps:
     - name: Put dog in PATH
-      run: mkdir ~/bin; wget -O ~/bin/dog https://raw.githubusercontent.com/rasmus-toftdahl-olesen/dog/master/dog.py; export PATH=$PATH:~/bin
-    - name: Resulting PATH
-      run: echo $PATH
-    - name: dog version
-      run: dog --version
+      run: mkdir ~/bin; wget -O ~/bin/dog https://raw.githubusercontent.com/rasmus-toftdahl-olesen/dog/master/dog.py; chmod +x ~/bin/dog; export PATH=$PATH:~/bin; dog --version
     - uses: actions/checkout@v2
     - name: cmake
-      run: dog cmake .
+      run: ~/bin/dog cmake .
     - name: make
-      run: dog make
+      run: ~/bin/dog make
